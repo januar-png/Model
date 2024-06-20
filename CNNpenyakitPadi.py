@@ -1,4 +1,9 @@
-pip install jcopdl
+import subprocess
+import sys
+try:
+    import jcopdl
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "jcopdl"])
 import torch
 from torch import nn
 from jcopdl.layers import linear_block, conv_block
