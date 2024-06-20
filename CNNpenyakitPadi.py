@@ -1,4 +1,4 @@
-!pip install jcopdl
+pip install jcopdl
 import torch
 from torch import nn
 from jcopdl.layers import linear_block, conv_block
